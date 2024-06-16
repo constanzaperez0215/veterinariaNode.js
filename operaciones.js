@@ -1,4 +1,3 @@
-const { Console } = require('console');
 const fs = require('fs');
 
 const leer = ()=>{
@@ -16,6 +15,7 @@ const registrar= (nombre, edad, tipo, color, enfermedad)=>{
         const citas =JSON.parse(data)
         citas.push({nombre, edad, tipo, color, enfermedad})
         fs.writeFileSync('citas.json', JSON.stringify(citas))
+        return 'Paciente guardado con éxito'
     } catch (error) {
         console.log('No se pudo registrar el nuevo paciente')
     }

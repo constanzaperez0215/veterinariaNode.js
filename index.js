@@ -5,14 +5,19 @@
 const {leer, registrar} = require('./operaciones')
 
 const [operacion, nombre, edad, tipo, color, enfermedad] = process.argv.slice(2)
-console.log(operacion, nombre, edad, tipo, color, enfermedad)
+// console.log(operacion, nombre, edad, tipo, color, enfermedad)
 
-if(operacion.trim().toLowerCase() === "registrar"){
+if (operacion == undefined){
+    console.log('Por favor ingrese los datos validos')
+
+}else if(operacion.trim().toLowerCase() === "registrar"){
     let resultado = registrar(nombre, edad, tipo, color, enfermedad)
-    console.log(resultado, "pasó el registro")
+    console.log(resultado)
+
 }else if(operacion.trim().toLowerCase() === "leer"){
     let resultado = leer()
-    console.log(resultado, "pasó leer")
+    console.log(resultado)
+
 }else {
     console.log("Ingrese la opción registrar o leer")
 }

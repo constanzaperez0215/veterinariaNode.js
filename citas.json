@@ -1,1 +1,16 @@
-[{"nombre":"Benito","edad":"2 años","tipo":"perro","color":"blanco","enfermedad":"vomitos"},{"nombre":"Benito","edad":"2 años","tipo":"perro","color":"blanco","enfermedad":"vomitos"}]
+[
+  {
+    "nombre": "Benito",
+    "edad": "2 años",
+    "tipo": "perro",
+    "color": "blanco",
+    "enfermedad": "vomitos"
+  },
+  {
+    "nombre": "Carlita",
+    "edad": "4 años",
+    "tipo": "perro",
+    "color": "negro",
+    "enfermedad": "fractura de cadera"
+  }
+]
